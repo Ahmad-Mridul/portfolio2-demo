@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="top_section">
+        <div>
+            <nav id="nav" class="center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="flexible sub_section_top">
+            <div class="content half_width">
+                <h1 style="color: white; margin-bottom: 15px;">Creative</h1>
+                <h3 style="color:orange; margin-bottom: 50px;">Design Agency</h3>
+                <p style="color: white; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis soluta
+                    inventore ipsa vitae
+                    dolores. Officia facere quasi illo voluptatibus consectetur corrupti reprehenderit et eius delectus
+                    est. Eaque laborum quasi nihil?</p>
+                <p class="for_btn"><a class="button" href="#">Read More</a></p>
+            </div>
+            <div class="right_image half_width">
+                <img src="man2.png" alt="">
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="about">
+        <div class="about_section">
+            <div class="flexible sub_section_top">
+                <div class="right_image half_width">
+                    <img src="mobile-app.png" alt="">
+                </div>
+                <div class="content half_width">
+                    <h1 style="color: seagreen; margin-bottom: 15px;">ABOUT</h1>
+                    <h3 style="color:orange; margin-bottom: 50px;">Design Agency</h3>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perspiciatis soluta
+                        inventore ipsa vitae
+                        dolores. Officia facere quasi illo voluptatibus consectetur corrupti reprehenderit et eius
+                        delectus
+                        est. Eaque laborum quasi nihil?</p>
+                    <p class="for_btn"><a class="button2" href="#">Read More</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="flexible for_service">
+            <div class="content half_width m_top">
+                <h1 style="color: seagreen; margin-bottom: 15px;">Services</h1>
+                <h3 style="color:orange; margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorem, perspiciatis!</h3>
+                <p style="color: seagreen; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Perspiciatis soluta
+                    inventore ipsa vitae
+                    dolores. Officia facere quasi illo voluptatibus consectetur corrupti reprehenderit et eius delectus
+                    est. Eaque laborum quasi nihil?</p>
+                <p class="for_btn"><a class="button" href="#">Read More</a></p>
+            </div>
+
+            <div class="half_width">
+                <div class="box m_top">
+                    <h1>Graphic Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quia dolor consequuntur sint
+                        iusto ducimus?</p>
+                </div>
+                <div class="box">
+                    <h1>Web Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quia dolor consequuntur sint
+                        iusto ducimus?</p>
+                </div>
+                <div class="box">
+                    <h1>3D Animation</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quia dolor consequuntur sint
+                        iusto ducimus?</p>
+                </div>
+                <div class="box">
+                    <h1>Interior Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quia dolor consequuntur sint
+                        iusto ducimus?</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="flexible for_contact">
+            <div class="content half_width m_left m_top">
+                <h1 style="color: seagreen; margin-bottom: 15px;">Contact Us</h1>
+                <h3 style="color:orange; margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorem, perspiciatis!</h3>
+                <p style="color: seagreen; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Perspiciatis soluta
+                    inventore ipsa vitae
+                    dolores. Officia facere quasi illo voluptatibus consectetur corrupti reprehenderit et eius delectus
+                    est. Eaque laborum quasi nihil?</p>
+
+            </div>
+
+            <div class="half_width">
+
+                <form class="m_top">
+                    <label for="name">Name</label><br>
+                    <input class="input" type="text" for="name"><br>
+                    <label for="email">Email</label><br>
+                    <input class="input" type="email" for="email"><br>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" cols="30" rows="5"></textarea>
+                </form>
+
+
+                <p class="for_btn"><a class="button" href="#">Submit</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="last_section">
+            <p>&copy All right reservs Ahmad Mridul | 2021</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
